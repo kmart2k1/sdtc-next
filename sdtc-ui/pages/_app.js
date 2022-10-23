@@ -4,7 +4,7 @@ import Script from "next/script";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Script strategy="beforeInteractive">
+      <Script id="test" strategy="beforeInteractive">
         {`console.log('hi');var MemberSpace = window.MemberSpace || {"subdomain":"onrender"};
 (function(d){
   var s = d.createElement("script");
